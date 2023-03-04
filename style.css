@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap");
+
+:root {
+  --primary-color: #28282b;
+  --secondary-color: #e5e4e2;
+  --dark-green: #023020;
+  --dark-purple: #301934;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 10rem;
+  height: 100vh;
+  position: relative;
+}
+
+.nav-link {
+  list-style: none;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  text-indent: 1.5rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+nav {
+  border-left: 1px solid var(--primary-color);
+}
+
+nav {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 2;
+}
+
+nav li a,
+.content-block a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.content-block a:hover {
+  text-decoration: underline;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+section {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.content-block {
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  z-index: 2;
+}
+
+.icons {
+  display: flex;
+  margin: 0;
+}
+
+.bi {
+  color: var(--primary-color);
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.shapes {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  -ms-transform: translateY(-60%);
+  transform: translateY(-60%);
+}
+
+.animation {
+  animation: rotate-all 2s 0 infinite linear alternate;
+}
+
+.div1 {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--primary-color);
+  position: relative;
+  margin: auto;
+  animation: square-to-circle 2.5s 0.5s infinite
+    cubic-bezier(1, 0.015, 0.295, 1.225) alternate-reverse;
+}
+
+.div2 {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--primary-color);
+  position: relative;
+  margin: auto;
+  animation: square-to-circle2 2.5s 0.42s infinite
+    cubic-bezier(1, 0.015, 0.295, 1.225) alternate-reverse;
+}
+
+#one {
+  top: 7.5rem;
+}
+
+#two {
+  top: 7.5rem;
+  right: 4rem;
+}
+
+#three {
+  top: 7.5rem;
+}
+
+#four {
+  bottom: 1rem;
+  left: 4rem;
+}
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0;
+    background: var(--primary-color);
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: var(--primary-color);
+    transform: rotate(135deg);
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: var(--dark-green);
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: var(--dark-purple);
+    transform: rotate(315deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: var(--primary-color);
+    transform: rotate(404deg);
+  }
+}
+
+@keyframes square-to-circle2 {
+  0% {
+    border-radius: 0 0 0 0;
+    background: var(--primary-color);
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 0 0 50% 0;
+    background: var(--primary-color);
+    transform: rotate(135deg);
+  }
+  50% {
+    border-radius: 0 0 50% 50%;
+    background: var(--dark-green);
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 50% 0 50% 50%;
+    background: var(--dark-purple);
+    transform: rotate(315deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: var(--primary-color);
+    transform: rotate(404deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    top: 2.5rem;
+  }
+  section {
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  footer {
+    bottom: 2.5rem;
+  }
+  .shapes {
+    top: 70%;
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
+  .div1,
+  .div2 {
+    height: 2rem;
+    width: 2rem;
+  }
+  #one {
+    top: 3.25rem;
+  }
+
+  #two {
+    top: 3.25rem;
+    right: 2rem;
+  }
+
+  #three {
+    top: 3.25rem;
+  }
+
+  #four {
+    bottom: 1rem;
+    left: 2rem;
+  }
+  .experience li {
+    display: none;
+  }
+}
