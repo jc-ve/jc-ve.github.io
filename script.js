@@ -48,29 +48,29 @@ function showProjects(e) {
       <h2>CSS</h2>
       <small>(All of the mentioned projects below are mockup websites.)</small>
       <li>
-        <a href="" target="_blank">Real Estate</a>
+        <a href="https://jc-enriquez.github.io/digitalestate-project/" target="_blank">Real Estate</a>
       </li>
       <li>
-        <a href="" target="_blank">Photography Company</a>
+        <a href="https://jc-enriquez.github.io/litrato-project/" target="_blank">Photography Company</a>
       </li>
       <li>
-        <a href="" target="_blank">Architecture Firm</a>
+        <a href="https://jc-enriquez.github.io/arkitektura-project/" target="_blank">Architecture Firm</a>
       </li>
     </div>
     <div class="content-block">
       <h2>JavaScript</h2>
       <small>(All of the mentioned projects below are API based.)</small>
       <li>
-        <a href="" target="_blank">Klima</a>
+        <a href="https://jc-enriquez.github.io/openweathermap-api-project/" target="_blank">Klima</a>
       </li>
       <li>
-        <a href="" target="_blank">Pahayagan</a>
+        <a href="https://jc-enriquez.github.io/newsapi-project" target="_blank">Pahayagan</a>
       </li>
       <li>
-        <a href="" target="_blank">Tanghalan</a>
+        <a href="https://jc-enriquez.github.io/tmdb-api-project/" target="_blank">Tanghalan</a>
       </li>
       <li>
-        <a href="" target="_blank">Kubyertos</a>
+        <a href="https://jc-enriquez.github.io/themealdb-api-project/" target="_blank">Kubyertos</a>
       </li>
     </div>
   </div>
