@@ -71,6 +71,10 @@ nav li a:hover {
   text-decoration: underline;
 }
 
+nav .icon {
+  display: none;
+}
+
 .active {
   font-weight: bold;
 }
@@ -93,8 +97,27 @@ h4 {
   font-weight: normal;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 .content-block {
   margin-bottom: 1rem;
+}
+
+.download-btn {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.download-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  opacity: 0.9;
 }
 
 footer {
@@ -263,5 +286,25 @@ footer {
   }
   .experience li {
     display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  nav {
+    top: 0.5rem;
+    border: none;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .shapes {
+    top: 80%;
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+    right: 2rem;
+  }
+  footer {
+    bottom: 0.5rem;
   }
 }

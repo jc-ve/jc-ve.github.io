@@ -33,6 +33,19 @@ function showAbout(e) {
   mainContent.innerHTML = `
   <h1 class="animate__animated animate__fadeInUp">About</h1>
   <p class="animate__animated animate__fadeInUp">My name is John Christopher V. Enriquez and I enjoy translating designs into existence.</p>
+  <div class="content-block">
+      <h2>Certifications</h2>
+      <li>
+        <a href="https://www.freecodecamp.org/certification/fccc86baeb8-d403-46f1-b0a5-ce2325302b6b/responsive-web-design" target="_blank">Responsive Web Design</a>
+      </li>
+      <li>
+        <a href="files/HTML & CSS Certificate.pdf" target="_blank">HTML & CSS Certification</a>
+      </li>
+      <li>
+        <a href="files/John Christopher V. Enriquez Free Coding Bootcamp - Certificate of Participation.pdf" target="_blank">Zuitt Free Coding Bootcamp</a>
+      </li>
+  </div>
+  <a href="files/Resume_Enriquez, John Christopher.pdf" target="_blank" class="download-btn">Download Resume</a>
   `;
   mainContent.appendChild(mainContentElement);
 }
