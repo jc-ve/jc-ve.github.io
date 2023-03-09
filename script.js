@@ -45,7 +45,7 @@ function showAbout(e) {
         <a href="files/John Christopher V. Enriquez Free Coding Bootcamp - Certificate of Participation.pdf" target="_blank">Zuitt Free Coding Bootcamp</a>
       </li>
   </div>
-  <a href="files/Resume_Enriquez, John Christopher.pdf" target="_blank" class="download-btn">Download Resume</a>
+  <a href="files/Enriquez_Resume.pdf" target="_blank" class="download-btn">Download Resume</a>
   `;
   mainContent.appendChild(mainContentElement);
 }
