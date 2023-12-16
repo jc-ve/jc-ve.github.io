@@ -2,21 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>John Christopher Enriquez</title>
-    <link rel="icon" href="files/logo.png" type="png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Under construction.</p>
+    <div class="error-message">
+      <p>Page is still under construction.</p>
+    </div>
+    <header class="header u-hidden">
+      <div class="u-container">
+        <nav class="navigation">
+          <a href="index.html" class="navigation__link">Jc Enriquez</a>
+
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main u-hidden">
+      <section class="section section--hero">
+        <div class="u-container">
+          <h1 class="heading-primary">Hello, I'm John Christopher Enriquez</h1>
+          <p class="paragraph"></p>
+          <div class="hero__ctas">
+            <a href="#" class="hero-cta hero-cta--solid">Contact me</a>
+            <a href="#" class="hero-cta hero-cta--outlined">Download Resume</a>
+          </div>
+        </div>
+      </section>
+      <section class="section section--about">
+        <div class="u-container">
+          <h2 class="heading-secondary">About</h2>
+        </div>
+      </section>
+      <section class="section section--projects">
+        <div class="u-container">
+          <h2 class="heading-secondary">Projects</h2>
+          <ul class="projects__list">
+            <li class="projects__item">front-end-mentor-challenges</li>
+            <p class="projects__description">
+              Compilation of my solutions of the challenges I finished in
+              Front-End Mentor.
+            </p>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--contact">
+        <div class="u-container">
+          <h2 class="heading-secondary">Contact</h2>
+          <form action="#" class="form">
+            <div class="form__input-group">
+              <label for="" class="form__label">Full Name</label>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form__input-group">
+              <label for="" class="form__label">Email</label>
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form__input-group">
+              <label for="" class="form__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="form__input"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
