@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>John Christopher Enriquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="error-message">
+      <ion-icon name="build" class="error-icon"></ion-icon>
       <p>Page is still under construction.</p>
     </div>
     <header class="header u-hidden">
@@ -36,8 +43,13 @@
     <main class="main u-hidden">
       <section class="section section--hero">
         <div class="u-container">
-          <h1 class="heading-primary">Hello, I'm John Christopher Enriquez</h1>
-          <p class="paragraph"></p>
+          <h1 class="heading heading--primary">
+            Hello, I'm John Christopher Enriquez
+          </h1>
+          <p class="paragraph">
+            A Front-End Developer with a passion for crafting seamless and
+            user-friendly digital experiences.
+          </p>
           <div class="hero__ctas">
             <a href="#" class="hero-cta hero-cta--solid">Contact me</a>
             <a href="#" class="hero-cta hero-cta--outlined">Download Resume</a>
@@ -51,19 +63,16 @@
       </section>
       <section class="section section--projects">
         <div class="u-container">
-          <h2 class="heading-secondary">Projects</h2>
+          <h2 class="heading heading--secondary">Projects</h2>
           <ul class="projects__list">
             <li class="projects__item">front-end-mentor-challenges</li>
-            <p class="projects__description">
-              Compilation of my solutions of the challenges I finished in
-              Front-End Mentor.
-            </p>
+            <p class="projects__description"></p>
           </ul>
         </div>
       </section>
       <section class="section section--contact">
         <div class="u-container">
-          <h2 class="heading-secondary">Contact</h2>
+          <h2 class="heading heading--secondary">Contact</h2>
           <form action="#" class="form">
             <div class="form__input-group">
               <label for="" class="form__label">Full Name</label>
@@ -99,5 +108,13 @@
       </section>
     </main>
     <footer class="footer"></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
