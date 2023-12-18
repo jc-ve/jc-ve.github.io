@@ -3,17 +3,27 @@
 /* ============================== */
 
 :root {
-  --dark-gray: #212529;
-  --medium-gray: #868e96;
-  --light-gray: #f8f9fa;
+  /* Main Colors */
+  --black: #393d3f;
+  --gray: #616465;
+  --white: #fdfdff;
+  --green: #62929e;
 
-  --navy-blue: #001f3f;
-  --soft-gray: #f2f2f2;
-  --mint-green: #98fb98;
-}
+  /* Tints and Shades */
+  --green-1: #729da8;
 
-::selection {
-  background-color: var(--medium-gray);
+  /* Language Colors */
+  --html: #e34c26;
+  --css: #563d7c;
+  --js: #f1e05a;
+  --sass: #a53b70;
+
+  /* Difficulty Level */
+  --newbie: #6abecd;
+  --junior: #aad742;
+  --intermediate: #f1b604;
+  --advanced: #f48925;
+  --guru: #ed2c49;
 }
 
 *,
@@ -29,11 +39,11 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   box-sizing: border-box;
-  background-color: var(--dark-gray);
-  color: var(--light-gray);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* ============================== */
@@ -63,10 +73,28 @@ body {
   margin: 0 auto;
 }
 
+.u-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
 .u-hidden {
   display: none;
   opacity: 0;
   visibility: hidden;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 4.8rem;
 }
 
 /* ============================== */
@@ -108,10 +136,12 @@ body {
   color: inherit;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid transparent;
+  transition: color 0.3s;
 }
 
 .navigation__link:hover,
 .navigation__link:active {
+  color: var(--green);
   border-bottom: 2px solid currentColor;
 }
 
@@ -119,14 +149,19 @@ body {
 /* SECTION HERO */
 /* ============================== */
 
+.section {
+  padding: 4.8rem 0;
+}
+
 .hero__ctas {
   display: flex;
-  gap: 2.4rem;
+  gap: 1.2rem;
 }
 
 .hero-cta:link,
 .hero-cta:visited {
   display: inline-block;
+  font-weight: 600;
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 100px;
@@ -135,25 +170,25 @@ body {
 
 .hero-cta--solid:link,
 .hero-cta--solid:visited {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .hero-cta--solid:hover,
 .hero-cta--solid:active {
-  background-color: var(--medium-gray);
+  background-color: var(--green-1);
 }
 
 .hero-cta--outlined:link,
 .hero-cta--outlined:visited {
-  box-shadow: 0 0 0 1px inset var(--light-gray);
-  color: var(--light-gray);
+  box-shadow: 0 0 0 1px inset var(--green);
+  color: var(--black);
 }
 
 .hero-cta--outlined:hover,
 .hero-cta--outlined:active {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: var(--green);
+  color: var(--white);
 }
 
 /* ============================== */
@@ -162,14 +197,47 @@ body {
 
 .projects__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
-.projects__item {
+.project__link:link,
+.project__link:visited {
+  display: inline-block;
   font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s;
 }
 
-.projects__description {
-  color: var(--medium-gray);
+.project__link:hover,
+.project__link:active {
+  color: var(--green);
+  border-bottom: 1px solid currentColor;
+}
+
+.project__description {
+  font-size: 1.4rem;
+  text-indent: 2rem;
+  color: var(--gray);
+}
+
+.project__description .project__link {
+  text-indent: 0;
+}
+
+/* ============================== */
+/* SECTION CONTACT */
+/* ============================== */
+
+.contact__content {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 3.2rem;
+  border-radius: 12px;
 }
 
 /* ============================== */
@@ -179,17 +247,21 @@ body {
 .form__label {
   font-weight: 600;
   display: block;
+  margin-bottom: 1.2rem;
+}
+
+.form__input-group {
+  width: 100%;
 }
 
 .form__input {
   font-family: inherit;
   width: 100%;
   padding: 1rem 2rem;
-  border: 1px solid transparent;
-  border-radius: 8px;
+  border: none;
+  border-radius: 6px;
 }
 
 .form__input:focus {
   outline: none;
-  border: 1px solid var(--medium-gray);
 }
