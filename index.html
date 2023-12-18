@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -43,10 +43,10 @@
     <main class="main u-hidden">
       <section class="section section--hero">
         <div class="u-container">
-          <h1 class="heading heading--primary">
+          <h1 class="heading heading--primary u-margin-bottom-sm">
             Hello, I'm John Christopher Enriquez
           </h1>
-          <p class="paragraph">
+          <p class="paragraph u-margin-bottom-md">
             A Front-End Developer with a passion for crafting seamless and
             user-friendly digital experiences.
           </p>
@@ -56,54 +56,99 @@
           </div>
         </div>
       </section>
-      <section class="section section--about">
+      <section class="section section--about u-hidden">
         <div class="u-container">
-          <h2 class="heading-secondary">About</h2>
+          <h2 class="heading heading--secondary">About</h2>
         </div>
       </section>
       <section class="section section--projects">
         <div class="u-container">
-          <h2 class="heading heading--secondary">Projects</h2>
+          <h2 class="heading heading--secondary u-margin-bottom-md">
+            Projects
+          </h2>
           <ul class="projects__list">
-            <li class="projects__item">front-end-mentor-challenges</li>
-            <p class="projects__description"></p>
+            <li class="project__item">
+              <a href="#" class="project__link u-margin-bottom-sm"
+                >front-end-mentor-challenges</a
+              >
+              <p class="project__description">
+                Compilation of the challenges I finished from
+                <a
+                  href="https://www.frontendmentor.io/"
+                  target="_blank"
+                  class="project__link"
+                  >Front-End Mentor</a
+                >.
+              </p>
+            </li>
+
+            <li class="project__item">
+              <a href="#" class="project__link u-margin-bottom-sm"
+                >codewell-challenges</a
+              >
+              <p class="project__description">
+                Compilation of the challenges I finished from
+                <a
+                  href="https://www.codewell.cc/"
+                  target="_blank"
+                  class="project__link"
+                  >Codewell</a
+                >.
+              </p>
+            </li>
+
+            <li class="project__item">
+              <a href="#" class="project__link u-margin-bottom-sm"
+                >css-frameworks-projects</a
+              >
+              <p class="project__description">
+                Compilation of free templates I created using different CSS
+                Frameworks such as Bootstrap, Tailwind, Bulma & Materialize.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
       <section class="section section--contact">
         <div class="u-container">
-          <h2 class="heading heading--secondary">Contact</h2>
-          <form action="#" class="form">
-            <div class="form__input-group">
-              <label for="" class="form__label">Full Name</label>
-              <input
-                type="text"
-                class="form__input"
-                placeholder="Enter your name"
-              />
-            </div>
+          <div class="contact__content">
+            <h2 class="heading heading--secondary u-margin-bottom-md">
+              Contact
+            </h2>
+            <form action="#" class="form">
+              <div class="u-flex u-margin-bottom-sm">
+                <div class="form__input-group">
+                  <label for="" class="form__label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Enter your name"
+                  />
+                </div>
 
-            <div class="form__input-group">
-              <label for="" class="form__label">Email</label>
-              <input
-                type="email"
-                class="form__input"
-                placeholder="Enter your email"
-              />
-            </div>
+                <div class="form__input-group">
+                  <label for="" class="form__label">Email</label>
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </div>
 
-            <div class="form__input-group">
-              <label for="" class="form__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                class="form__input"
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-          </form>
+              <div class="form__input-group">
+                <label for="" class="form__label">Message</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form__input"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
