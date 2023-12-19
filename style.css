@@ -11,6 +11,7 @@
 
   /* Tints and Shades */
   --green-1: #729da8;
+  --green-2: #a1bec5;
 
   /* Language Colors */
   --html: #e34c26;
@@ -32,6 +33,11 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.5rem var(--green-2);
 }
 
 html {
@@ -98,8 +104,114 @@ body {
 }
 
 /* ============================== */
+/* COMPONENTS */
+/* ============================== */
+
+.card {
+  max-width: 30rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card--newbie:hover {
+  border-bottom: 6px solid var(--newbie);
+}
+
+.card--junior:hover {
+  border-bottom: 6px solid var(--junior);
+}
+
+.card--intermediate:hover {
+  border-bottom: 6px solid var(--intermediate);
+}
+
+.card--advanced:hover {
+  border-bottom: 6px solid var(--advanced);
+}
+
+.card__img {
+  display: block;
+}
+
+.card__body {
+  padding: 2rem 1.5rem;
+}
+
+.card__difficulty {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+.card__difficulty--newbie {
+  background-color: var(--newbie);
+}
+
+.card__skills {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.skill {
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+.skill--html {
+  background-color: var(--html);
+}
+
+.skill--css {
+  background-color: var(--css);
+}
+
+.skill--js {
+  background-color: var(--js);
+}
+
+.skill--sass {
+  background-color: var(--sass);
+}
+
+.card__text {
+  margin-bottom: 2.4rem;
+}
+
+.card__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.card__description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.card__links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* ============================== */
 /* TYPOGRAPHY */
 /* ============================== */
+
 .heading {
   font-family: "Montserrat", sans-serif;
 }
@@ -189,6 +301,21 @@ body {
 .hero-cta--outlined:active {
   background-color: var(--green);
   color: var(--white);
+}
+
+.hero__links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hero-link:link,
+.hero-link:visited {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.hero-link__icon {
+  font-size: 2.4rem;
 }
 
 /* ============================== */
