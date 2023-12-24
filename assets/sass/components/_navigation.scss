@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include resetLink;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid transparent;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-green;
+      border-bottom: 2px solid currentColor;
+    }
+  }
+}

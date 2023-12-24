@@ -1,0 +1,81 @@
+.section {
+  padding: 4.8rem 0;
+}
+
+.hero {
+  &__ctas,
+  &__links {
+    @include flexSmall;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include resetLink;
+      color: $clr-green;
+    }
+
+    &:hover .icon--hero,
+    &:active .icon--hero {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.about {
+  &__skills {
+    @include flexSmall;
+  }
+}
+
+.project {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: 1.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include resetLink;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid transparent;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-green;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    color: $clr-gray;
+  }
+}
+
+.contact {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+}

@@ -1,0 +1,38 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: all 0.3s;
+  }
+
+  &--solid {
+    &:link,
+    &:visited {
+      background-color: $clr-green;
+      color: $clr-white;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-green, 10%);
+    }
+  }
+
+  &--outlined {
+    &:link,
+    &:visited {
+      box-shadow: 0 0 0 1px inset $clr-green;
+      color: $clr-black;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $clr-green;
+      color: $clr-white;
+    }
+  }
+}

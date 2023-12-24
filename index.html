@@ -11,14 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="error-message">
-      <ion-icon name="build" class="error-icon"></ion-icon>
-      <p>Page is still under construction.</p>
-    </div>
-    <header class="header u-hidden">
+    <header class="header">
       <div class="u-container">
         <nav class="navigation">
           <a href="index.html" class="navigation__link">Jc Enriquez</a>
@@ -40,8 +36,8 @@
         </nav>
       </div>
     </header>
-    <main class="main u-hidden">
-      <section class="section section--hero">
+    <main class="main">
+      <section class="section hero">
         <div class="u-container">
           <h1 class="heading heading--primary u-margin-bottom-sm">
             Hello, I'm John Christopher Enriquez
@@ -51,24 +47,24 @@
             user-friendly digital experiences.
           </p>
           <div class="hero__ctas u-margin-bottom-md">
-            <a href="#" class="hero-cta hero-cta--solid">Contact me</a>
-            <a href="#" class="hero-cta hero-cta--outlined">Download Resume</a>
+            <a href="#" class="btn btn--solid">Contact me</a>
+            <a href="#" class="btn btn--outlined">Download Resume</a>
           </div>
 
           <div class="hero__links">
-            <a href="" class="hero-link">
-              <ion-icon name="logo-github" class="hero-link__icon"></ion-icon>
+            <a href="" class="hero__link">
+              <ion-icon name="logo-github" class="icon--hero"></ion-icon>
             </a>
-            <a href="" class="hero-link">
-              <ion-icon name="logo-youtube" class="hero-link__icon"></ion-icon>
+            <a href="" class="hero__link">
+              <ion-icon name="logo-youtube" class="icon--hero"></ion-icon>
             </a>
-            <a href="" class="hero-link">
-              <ion-icon name="logo-linkedin" class="hero-link__icon"></ion-icon>
+            <a href="" class="hero__link">
+              <ion-icon name="logo-linkedin" class="icon--hero"></ion-icon>
             </a>
           </div>
         </div>
       </section>
-      <section class="section section--about">
+      <section class="section about">
         <div class="u-container">
           <h2 class="heading heading--secondary u-margin-bottom-md">About</h2>
           <p class="paragraph u-margin-bottom-md">
@@ -78,98 +74,119 @@
             Let's collaborate and code something awesome together! 🚀
           </p>
 
-          <div class="skill-icons">
+          <div class="about__icons">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-              class="skill-icon"
+              class="icon--skill"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+              class="icon--skill"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/foundation/foundation-original.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              class="skill-icon"
+              class="icon--skill"
             />
           </div>
         </div>
       </section>
-      <section class="section section--projects">
+      <section class="section projects">
         <div class="u-container">
           <h2 class="heading heading--secondary u-margin-bottom-md">
             Projects
           </h2>
-          <ul class="projects__list">
+          <ul class="project__list">
             <li class="project__item">
-              <a href="#" class="project__link u-margin-bottom-sm"
-                >front-end-mentor-challenges</a
-              >
-              <p class="project__description">
-                Compilation of the challenges I finished from
-                <a
-                  href="https://www.frontendmentor.io/"
-                  target="_blank"
-                  class="project__link"
-                  >Front-End Mentor</a
-                >.
-              </p>
+              <ion-icon
+                name="caret-forward-outline"
+                class="icon--bullet"
+              ></ion-icon>
+              <div>
+                <a href="#" class="project__link u-margin-bottom-sm"
+                  >front-end-mentor-challenges</a
+                >
+                <p class="project__description">
+                  Compilation of the challenges I finished from
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    class="project__link"
+                    >Front-End Mentor</a
+                  >.
+                </p>
+              </div>
             </li>
 
             <li class="project__item">
-              <a href="#" class="project__link u-margin-bottom-sm"
-                >codewell-challenges</a
-              >
-              <p class="project__description">
-                Compilation of the challenges I finished from
-                <a
-                  href="https://www.codewell.cc/"
-                  target="_blank"
-                  class="project__link"
-                  >Codewell</a
-                >.
-              </p>
+              <ion-icon
+                name="caret-forward-outline"
+                class="icon--bullet"
+              ></ion-icon>
+              <div>
+                <a href="#" class="project__link u-margin-bottom-sm"
+                  >codewell-challenges</a
+                >
+                <p class="project__description">
+                  Compilation of the challenges I finished from
+                  <a
+                    href="https://www.codewell.cc/"
+                    target="_blank"
+                    class="project__link"
+                    >Codewell</a
+                  >.
+                </p>
+              </div>
             </li>
 
             <li class="project__item">
-              <a href="#" class="project__link u-margin-bottom-sm"
+              <ion-icon
+                name="caret-forward-outline"
+                class="icon--bullet"
+              ></ion-icon>
+              <div>
+                <a href="#" class="project__link u-margin-bottom-sm"
                 >css-frameworks-projects</a
               >
               <p class="project__description">
@@ -177,17 +194,40 @@
                 Frameworks such as Bootstrap, Tailwind, Bulma & Materialize.
               </p>
             </li>
+              </div>
           </ul>
         </div>
       </section>
-      <section class="section section--contact">
+      <section class="section contact">
         <div class="u-container">
-          <div class="contact__content">
-            <h2 class="heading heading--secondary u-margin-bottom-md">
-              Contact
-            </h2>
+          <h2 class="heading heading--secondary u-margin-bottom-md">
+            Contact
+          </h2>
+          <div class="grid grid-2-cols">
+            <div class="contact__info">
+              <ul class="contact__list">
+                <li class="contact__item" class="icon--bullet">
+                  <span>
+                    <ion-icon name="call-outline" class="icon--bullet"></ion-icon>
+                  </span>
+                  <span >+63 995 773 3890</span>
+                </li>
+
+                <li class="contact__item">
+                  <span >
+                    <ion-icon name="mail-outline" class="icon--bullet"></ion-icon>
+                  </span>
+                  <span >john.christopher.enriquez.2@gmail.com</span>
+                </li>
+
+                <li class="contact__item">
+                  <ion-icon name="location-outline" class="icon--bullet"></ion-icon>
+                  <span >Caloocan, Philippines</span>
+                </li>
+              </ul>
+            </div>
             <form action="#" class="form">
-              <div class="u-flex u-margin-bottom-sm">
+              <div class="form__group u-margin-bottom-sm">
                 <div class="form__input-group">
                   <label for="" class="form__label">Full Name</label>
                   <input
@@ -212,8 +252,7 @@
                 <textarea
                   name=""
                   id=""
-                  cols="30"
-                  rows="10"
+                  rows="5"
                   class="form__input"
                   placeholder="Enter your message"
                 ></textarea>
@@ -222,69 +261,12 @@
           </div>
         </div>
       </section>
-
-      <section class="section section--components">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-md">
-            Components
-          </h2>
-          <div class="card card--newbie">
-            <img
-              src="https://placehold.co/300"
-              alt="Project image placeholder"
-              class="card__img"
-            />
-
-            <div class="card__body">
-              <span class="card__difficulty card__difficulty--newbie"
-                >Newbie</span
-              >
-              <div class="card__skills">
-                <span class="skill skill--html">HTML</span>
-                <span class="skill skill--css">CSS</span>
-                <span class="skill skill--sass">SASS</span>
-                <span class="skill skill--js">JavaScript</span>
-              </div>
-              <div class="card__text">
-                <p class="card__title">Insert the title here</p>
-                <p class="card__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis tenetur libero ut! Architecto necessitatibus iure
-                  molestiae voluptatibus, cum nisi! Tempore.
-                </p>
-              </div>
-              <div class="card__links">
-                <a href="#" class="hero-cta hero-cta--solid">View Project</a>
-                <a href="#" class="hero-cta hero-cta--outlined">View Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="search-field">
-            <form class="form-search">
-              <input
-                type="text"
-                class="input-search"
-                placeholder="Search for projects..."
-              />
-              <button type="submit" class="btn btn--solid btn-search">
-                <ion-icon
-                  name="search-outline"
-                  class="btn--solid__icon"
-                ></ion-icon>
-              </button>
-            </form>
-            <button class="btn btn--solid btn-filter">
-              <ion-icon
-                name="funnel-outline"
-                class="btn--solid__icon"
-              ></ion-icon>
-            </button>
-          </div>
-        </div>
-        <div class="">this is a trial change</div>
-      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="u-container">
+        <p class="footer__copyright">All Rights Reserved <span class="year"></span>.</p>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -293,6 +275,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

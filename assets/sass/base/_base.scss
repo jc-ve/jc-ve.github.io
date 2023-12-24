@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.5rem lighten($clr-green, 10%);
+}
+
+::selection {
+  background-color: $clr-green;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $clr-white;
+  color: $clr-black;
+}
