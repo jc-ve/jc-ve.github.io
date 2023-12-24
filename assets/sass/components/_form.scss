@@ -2,6 +2,11 @@
   &__group {
     display: flex;
     gap: 2.4rem;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
   }
 
   &__label {

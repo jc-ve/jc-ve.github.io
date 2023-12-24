@@ -4,4 +4,9 @@
 
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
 }
