@@ -141,6 +141,10 @@ body {
   @media screen and (max-width: 43.75em) {
     .navigation {
       padding: 2rem 0; } }
+  .navigation__logo {
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover; }
   .navigation__list {
     list-style: none;
     display: flex;
