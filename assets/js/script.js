@@ -1,6 +1,8 @@
 "use strict";
 // Selectors
 const yearEl = document.querySelector(".year");
+const containerAboutIcons = document.querySelector(".about__icons");
+const containerProjects = document.querySelector(".project__list");
 
 const form = document.querySelector(".form");
 const inputName = document.querySelector(".form__input--name");
@@ -11,21 +13,87 @@ const btnSubmit = document.querySelector(".btn--submit");
 const serviceID = "service_w8p44qn";
 const templateID = "template_uddjp6i";
 
-// const Swal = require("sweetalert2");
+// Display Skills
+const skills = {
+  HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+  CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+  JavaScript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+  SASS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+  jQuery:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+  Bootstrap:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+  Tailwind:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+  Bulma:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg",
+  Foundation:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/foundation/foundation-original.svg",
+  React:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  Vue: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+  NodeJs:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+};
 
-// Get current year
+const displaySkills = function () {
+  Object.keys(skills).forEach((skill) => {
+    const html = `
+        <img
+          src="${skills[skill]}"
+          class="icon--skill"
+          alt="${skill} icon"
+        />
+    `;
+    containerAboutIcons.insertAdjacentHTML("beforeend", html);
+  });
+};
+displaySkills();
 
-const date = new Date();
-const currentYear = date.getFullYear();
+// Display Projects
+const projects = {
+  firstProject: {
+    title: "front-end-mentor-challenges",
+    link: "https://jc-ve.github.io/front-end-mentor-challenges/",
+    desc: "Compilation of the challenges I finished from Front-End Mentor.",
+  },
+  secondProject: {
+    title: "codewell-challenges",
+    link: "https://jc-ve.github.io/codewell-challenges/",
+    desc: "Compilation of the challenges I finished from Codewell.",
+  },
+  thirdProject: {
+    title: "css-frameworks-projects",
+    link: "https://jc-ve.github.io/css-frameworks-projects/",
+    desc: "Compilation of free templates I created using different CSS Frameworks.",
+  },
+};
 
-yearEl.textContent = currentYear;
+const displayProjects = function () {
+  Object.values(projects).forEach((project) => {
+    console.log(project.title);
+    const html = `
+    <li class="project__item">
+      <ion-icon name="caret-forward-outline" class="icon--bullet"></ion-icon>
+        <div>
+          <a href="${project.link}" target="_blank"
+             class="project__link u-margin-bottom-sm">${project.title}</a>
+          <p class="project__description">${project.desc}</p>
+        </div>
+    </li>
+    `;
+
+    containerProjects.insertAdjacentHTML("beforeend", html);
+  });
+};
+
+displayProjects();
 
 // Email JS
 const emailJSInit = (function () {
   emailjs.init("kxj3uQ8ds5Jateqaq");
 })();
-
-const alertMessage = function () {};
 
 const sendMail = function () {
   const params = {
@@ -64,3 +132,8 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   sendMail();
 });
+
+// Get current year
+const date = new Date();
+const currentYear = date.getFullYear();
+yearEl.textContent = currentYear;
