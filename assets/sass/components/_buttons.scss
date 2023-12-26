@@ -18,7 +18,7 @@
 
     &:hover,
     &:active {
-      background-color: lighten($clr-green, 10%);
+      background-color: lighten($clr-green, 5%);
     }
   }
 
@@ -33,6 +33,22 @@
     &:active {
       background-color: $clr-green;
       color: $clr-white;
+    }
+  }
+
+  &--submit {
+    font-weight: 600;
+    color: $clr-white;
+    background-color: $clr-green;
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: lighten($clr-green, 5%);
     }
   }
 }

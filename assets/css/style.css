@@ -7,7 +7,7 @@
 
 *:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.5rem #82a8b1; }
+  box-shadow: 0 0 0 0.3rem #82a8b1; }
 
 ::selection {
   background-color: #62929e; }
@@ -78,7 +78,7 @@ body {
   color: #fdfdff; }
 
 .btn--solid:hover, .btn--solid:active {
-  background-color: #82a8b1; }
+  background-color: #729da8; }
 
 .btn--outlined:link, .btn--outlined:visited {
   box-shadow: 0 0 0 1px inset #62929e;
@@ -87,6 +87,19 @@ body {
 .btn--outlined:hover, .btn--outlined:active {
   background-color: #62929e;
   color: #fdfdff; }
+
+.btn--submit {
+  font-weight: 600;
+  color: #fdfdff;
+  background-color: #62929e;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s; }
+  .btn--submit:hover {
+    background-color: #729da8; }
 
 .footer {
   padding: 4rem 0; }
