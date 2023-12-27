@@ -30,4 +30,9 @@ body {
 .paragraph {
   color: $clr-gray;
   line-height: 1.6;
+  transition: color 0.3s;
+}
+
+.dark-mode .paragraph {
+  color: $clr-gray-light;
 }

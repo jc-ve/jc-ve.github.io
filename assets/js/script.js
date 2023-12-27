@@ -1,8 +1,13 @@
 "use strict";
 // Selectors
-const yearEl = document.querySelector(".year");
+const body = document.querySelector("body");
+const btnMode = document.querySelector(".btn--mode");
+const btnOutlined = document.querySelector(".btn--outlined");
+const iconBtn = document.querySelector(".btn-icon");
+
 const containerAboutIcons = document.querySelector(".about__icons");
 const containerProjects = document.querySelector(".project__list");
+const yearEl = document.querySelector(".year");
 
 const form = document.querySelector(".form");
 const inputName = document.querySelector(".form__input--name");
@@ -12,6 +17,20 @@ const btnSubmit = document.querySelector(".btn--submit");
 
 const serviceID = "service_w8p44qn";
 const templateID = "template_uddjp6i";
+
+// Toggle dark mode
+const switchBtnIcon = function () {
+  iconBtn.getAttribute("name") === "moon"
+    ? iconBtn.setAttribute("name", "sunny")
+    : iconBtn.setAttribute("name", "moon");
+};
+
+const darkMode = function () {
+  body.classList.toggle("dark-mode");
+  switchBtnIcon();
+};
+
+btnMode.addEventListener("click", darkMode);
 
 // Display Skills
 const skills = {
@@ -72,14 +91,13 @@ const projects = {
 
 const displayProjects = function () {
   Object.values(projects).forEach((project) => {
-    console.log(project.title);
     const html = `
     <li class="project__item">
       <ion-icon name="caret-forward-outline" class="icon--bullet"></ion-icon>
         <div>
           <a href="${project.link}" target="_blank"
-             class="project__link u-margin-bottom-sm">${project.title}</a>
-          <p class="project__description">${project.desc}</p>
+             class="project__link u-margin-bottom-xs">${project.title}</a>
+          <p class="paragraph project__description">${project.desc}</p>
         </div>
     </li>
     `;
@@ -87,7 +105,6 @@ const displayProjects = function () {
     containerProjects.insertAdjacentHTML("beforeend", html);
   });
 };
-
 displayProjects();
 
 // Email JS

@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>John Christopher Enriquez</title>
+    <meta
+      name="description"
+      content="Crafting digital wonders using HTML, CSS, and JavaScript. Let's collaborate on creating seamless online experiences that leave a lasting impression. Excited to bring creativity and precision to your projects.."
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, JavaScript, John Christopher Enriquez"
+    />
+    <meta name="author" content="John Christopher Enriquez" />
+    <title>JC Enriquez &mdash; Front-End Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +30,7 @@
           <a href="index.html">
             <img
               src="assets/files/images/logo.png"
-              alt="Jc Enriquez"
+              alt="John Christopher Enriquez"
               class="navigation__logo"
             />
           </a>
@@ -35,6 +44,11 @@
             </li>
             <li class="navigation__item">
               <a href="#section-contact" class="navigation__link">Contact</a>
+            </li>
+            <li>
+              <button class="btn--mode" aria-label="Button dark mode">
+                <ion-icon name="moon" class="btn-icon"></ion-icon>
+              </button>
             </li>
           </ul>
         </nav>
@@ -50,19 +64,29 @@
             A Front-End Developer with a passion for crafting seamless and
             user-friendly digital experiences.
           </p>
-          <div class="hero__ctas u-margin-bottom-md">
+          <div class="hero__ctas u-margin-bottom-lg">
             <a href="#section-contact" class="btn btn--solid">Contact me</a>
             <a href="#" class="btn btn--outlined">Download Resume</a>
           </div>
 
           <div class="hero__links">
-            <a href="" target="_blank" class="hero__link">
+            <a
+              href=""
+              target="_blank"
+              class="hero__link"
+              aria-label="Github link"
+            >
               <ion-icon name="logo-github" class="icon--hero"></ion-icon>
             </a>
-            <a href="" target="_blank" class="hero__link">
+            <a
+              href=""
+              target="_blank"
+              class="hero__link"
+              aria-label="Youtube link"
+            >
               <ion-icon name="logo-youtube" class="icon--hero"></ion-icon>
             </a>
-            <a href="" class="hero__link">
+            <a href="" class="hero__link" aria-label="LinkedIn link">
               <ion-icon name="logo-linkedin" class="icon--hero"></ion-icon>
             </a>
           </div>
@@ -70,7 +94,7 @@
       </section>
       <section class="section about" id="section-about">
         <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-md">About</h2>
+          <h2 class="heading heading--secondary u-margin-bottom-xl">About</h2>
           <p class="paragraph u-margin-bottom-md">
             Greetings! I'm John Christopher Enriquez, a budding Front-End
             Developer with a passion for crafting engaging digital experiences.
@@ -83,7 +107,7 @@
       </section>
       <section class="section projects" id="section-projects">
         <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-md">
+          <h2 class="heading heading--secondary u-margin-bottom-xl">
             Projects
           </h2>
           <ul class="project__list"></ul>
@@ -91,11 +115,11 @@
       </section>
       <section class="section contact" id="section-contact">
         <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-md">Contact</h2>
+          <h2 class="heading heading--secondary u-margin-bottom-xl">Contact</h2>
           <div class="grid grid-2-cols">
             <div class="contact__info">
               <ul class="contact__list">
-                <li class="contact__item" class="icon--bullet">
+                <li class="contact__item">
                   <span>
                     <ion-icon
                       name="call-outline"
@@ -127,31 +151,32 @@
             <form action="#" class="form">
               <div class="form__group u-margin-bottom-sm">
                 <div class="form__input-group">
-                  <label for="" class="form__label">Name</label>
+                  <label for="name" class="form__label">Name</label>
                   <input
                     type="text"
                     class="form__input form__input--name"
                     placeholder="Enter your name"
                     required
+                    id="name"
                   />
                 </div>
 
                 <div class="form__input-group">
-                  <label for="" class="form__label">Email</label>
+                  <label for="email" class="form__label">Email</label>
                   <input
                     type="email"
                     class="form__input form__input--email"
                     placeholder="Enter your email"
                     required
+                    id="email"
                   />
                 </div>
               </div>
 
               <div class="form__input-group u-margin-bottom-sm">
-                <label for="" class="form__label">Message</label>
+                <label for="message" class="form__label">Message</label>
                 <textarea
-                  name=""
-                  id=""
+                  id="message"
                   rows="5"
                   class="form__input form__input--message"
                   placeholder="Enter your message"

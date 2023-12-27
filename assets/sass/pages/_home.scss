@@ -16,12 +16,20 @@
     &:link,
     &:visited {
       @include resetLink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: $clr-green;
+      padding: 0.7rem;
+      border: 1px solid $clr-green;
+      border-radius: 50%;
+      transition: all 0.3s ease;
     }
 
-    &:hover .icon--hero,
-    &:active .icon--hero {
-      transform: scale(1.1);
+    &:hover,
+    &:active {
+      background-color: $clr-green;
+      color: $clr-white;
     }
   }
 }
@@ -51,22 +59,18 @@
     &:link,
     &:visited {
       @include resetLink;
+      @include hoverLink;
       display: inline-block;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid transparent;
-      transition: color 0.3s;
     }
 
     &:hover,
     &:active {
-      color: $clr-green;
-      border-bottom: 1px solid currentColor;
+      background-size: 100% 2px;
     }
   }
 
   &__description {
     font-size: 1.4rem;
-    color: $clr-gray;
   }
 }
 

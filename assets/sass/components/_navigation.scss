@@ -12,11 +12,13 @@
     height: 4rem;
     width: 4rem;
     object-fit: cover;
+    display: block;
   }
 
   &__list {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 1.2rem;
   }
 
@@ -24,15 +26,12 @@
     &:link,
     &:visited {
       @include resetLink;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid transparent;
-      transition: color 0.3s;
+      @include hoverLink;
     }
 
     &:hover,
     &:active {
-      color: $clr-green;
-      border-bottom: 2px solid currentColor;
+      background-size: 100% 2px;
     }
   }
 }

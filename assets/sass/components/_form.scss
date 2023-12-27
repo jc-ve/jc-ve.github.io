@@ -21,10 +21,12 @@
 
   &__input {
     font-family: inherit;
+    color: $clr-black;
     width: 100%;
     padding: 1rem 2rem;
     border: none;
     border-radius: 6px;
     border: 1px solid $clr-green;
+    caret-color: $clr-green;
   }
 }
