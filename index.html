@@ -17,198 +17,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/files/images/favicon.png" />
+    <link rel="icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <main>
       <div class="u-container">
-        <nav class="navigation">
-          <a href="index.html">
-            <img
-              src="assets/files/images/logo.png"
-              alt="John Christopher Enriquez"
-              class="navigation__logo"
-            />
-          </a>
-
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#section-about" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#section-projects" class="navigation__link">Projects</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#section-contact" class="navigation__link">Contact</a>
-            </li>
-            <li>
-              <button class="btn--mode" aria-label="Button dark mode">
-                <ion-icon name="moon" class="btn-icon"></ion-icon>
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section hero">
-        <div class="u-container">
+        <section class="section u-margin-bottom-md">
           <h1 class="heading heading--primary u-margin-bottom-sm">
-            Hello, I'm John Christopher Enriquez
+            Jc Enriquez
           </h1>
-          <p class="paragraph u-margin-bottom-md">
+          <p class="u-margin-bottom-sm">
             A Front-End Developer with a passion for crafting seamless and
             user-friendly digital experiences.
           </p>
-          <div class="hero__ctas u-margin-bottom-lg">
-            <a href="#section-contact" class="btn btn--solid">Contact me</a>
-            <a href="#" class="btn btn--outlined">Download Resume</a>
-          </div>
-
-          <div class="hero__links">
+          <p class="u-margin-bottom-sm">
+            I create
             <a
-              href=""
+              href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw"
+              class="link"
               target="_blank"
-              class="hero__link"
-              aria-label="Github link"
+              >Youtube</a
             >
-              <ion-icon name="logo-github" class="icon--hero"></ion-icon>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              class="hero__link"
-              aria-label="Youtube link"
-            >
-              <ion-icon name="logo-youtube" class="icon--hero"></ion-icon>
-            </a>
-            <a href="" class="hero__link" aria-label="LinkedIn link">
-              <ion-icon name="logo-linkedin" class="icon--hero"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="section about" id="section-about">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-xl">About</h2>
-          <p class="paragraph u-margin-bottom-md">
-            Greetings! I'm John Christopher Enriquez, a budding Front-End
-            Developer with a passion for crafting engaging digital experiences.
-            I'm driven by the idea of blending creativity with functionality.
-            Let's collaborate and code something awesome together! 🚀
+            videos from time to time.
           </p>
-
-          <div class="about__icons"></div>
-        </div>
-      </section>
-      <section class="section projects" id="section-projects">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-xl">
+          <p>
+            Visit my GitHub @
+            <a href="https://github.com/jc-ve" class="link" target="_blank"
+              >jc-ve</a
+            >
+            and send me an e-mail on
+            <a href="mailto:contact.jcve@gmail.com " class="link">
+              contact.jcve@gmail.com
+            </a>
+          </p>
+        </section>
+        <section class="section">
+          <h2 class="heading heading--secondary u-margin-bottom-sm">
             Projects
           </h2>
-          <ul class="project__list"></ul>
-        </div>
-      </section>
-      <section class="section contact" id="section-contact">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-xl">Contact</h2>
-          <div class="grid grid-2-cols">
-            <div class="contact__info">
-              <ul class="contact__list">
-                <li class="contact__item">
-                  <span>
-                    <ion-icon
-                      name="call-outline"
-                      class="icon--bullet"
-                    ></ion-icon>
-                  </span>
-                  <span>+63 995 773 3890</span>
-                </li>
-
-                <li class="contact__item">
-                  <span>
-                    <ion-icon
-                      name="mail-outline"
-                      class="icon--bullet"
-                    ></ion-icon>
-                  </span>
-                  <span>john.christopher.enriquez.2@gmail.com</span>
-                </li>
-
-                <li class="contact__item">
-                  <ion-icon
-                    name="location-outline"
-                    class="icon--bullet"
-                  ></ion-icon>
-                  <span>Caloocan, Philippines</span>
-                </li>
-              </ul>
-            </div>
-            <form action="#" class="form">
-              <div class="form__group u-margin-bottom-sm">
-                <div class="form__input-group">
-                  <label for="name" class="form__label">Name</label>
-                  <input
-                    type="text"
-                    class="form__input form__input--name"
-                    placeholder="Enter your name"
-                    required
-                    id="name"
-                  />
-                </div>
-
-                <div class="form__input-group">
-                  <label for="email" class="form__label">Email</label>
-                  <input
-                    type="email"
-                    class="form__input form__input--email"
-                    placeholder="Enter your email"
-                    required
-                    id="email"
-                  />
-                </div>
-              </div>
-
-              <div class="form__input-group u-margin-bottom-sm">
-                <label for="message" class="form__label">Message</label>
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="form__input form__input--message"
-                  placeholder="Enter your message"
-                  required
-                ></textarea>
-              </div>
-              <button class="btn--submit">Send message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="u-container">
-        <p class="footer__copyright">
-          All Rights Reserved <span class="year"></span>.
-        </p>
+          <ul class="list">
+            <li class="list__item">
+              <a
+                href="https://jc-ve.github.io/front-end-mentor-challenges/"
+                target="_blank"
+                class="link"
+                >fem-c</a
+              >
+              &mdash; finished challenges in Front-End Mentor.
+            </li>
+            <li class="list__item">
+              <a
+                href="https://jc-ve.github.io/codewell-challenges/"
+                target="_blank"
+                class="link"
+                >cw-c</a
+              >
+              &mdash; finished challenges in Codewell.
+            </li>
+            <li class="list__item">
+              <a
+                href="https://jc-ve.github.io/css-frameworks-projects/"
+                target="_blank"
+                class="link"
+                >css-t</a
+              >
+              &mdash; templates created by using CSS frameworks
+            </li>
+          </ul>
+        </section>
       </div>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/script.js"></script>
+    </main>
   </body>
 </html>
