@@ -19,6 +19,11 @@
   box-shadow: 0 0 0 1px inset var(--clr-green);
 }
 
+::selection {
+  background-color: $clr-green;
+  color: $clr-white;
+}
+
 html {
   font-size: 62.5%;
 }
