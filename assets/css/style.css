@@ -20,8 +20,8 @@
 }
 
 ::selection {
-  background-color: $clr-green;
-  color: $clr-white;
+  background-color: var(--clr-green);
+  color: var(--clr-white);
 }
 
 html {
@@ -45,9 +45,16 @@ body {
   padding: 2rem;
 }
 
-::selection {
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
   background-color: var(--clr-green);
-  color: var(--clr-white);
 }
 
 /* Utilities */
@@ -100,8 +107,19 @@ body {
   gap: 1.2rem;
 }
 
+.list--skill {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
 .list__item {
   border-bottom: 1px solid var(--clr-gray);
   padding-bottom: 1.2rem;
 }
 
+.skill {
+  height: 4rem;
+  width: 4rem;
+}
