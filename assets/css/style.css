@@ -3,6 +3,7 @@
   --clr-gray: #dee2e6;
   --clr-white: #fdfdff;
   --clr-green: #62929e;
+  --clr-green-light: #729da8;
 }
 
 *,
@@ -97,6 +98,28 @@ body::-webkit-scrollbar-thumb {
 .link:hover,
 .link:active {
   background-color: var(--clr-gray);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn--solid:link,
+.btn--solid:visited {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+}
+
+.btn--solid:hover,
+.btn--solid:active {
+  background-color: var(--clr-green-light);
+  transform: translateY(-0.5rem);
 }
 
 /* General */
